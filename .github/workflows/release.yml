@@ -1,7 +1,4 @@
-name: Release
-
-permissions:
-  contents: write
+name: Release Tag
 
 on:
   push:
