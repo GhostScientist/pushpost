@@ -1,6 +1,6 @@
 use std::io::{self};
 use serde::{Deserialize, Serialize};
-use reqwest;
+use reqest;
 use dirs;
 
 #[derive(Serialize, Deserialize)]
