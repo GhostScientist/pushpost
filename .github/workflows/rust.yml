@@ -14,5 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Install macOS build toochain
+      run: rustup target add x86_64-apple-darwin
     - name: Build
-      run: cargo build --verbose
+      run: cargo build --release --target x86_64-apple-darwin --verbose
